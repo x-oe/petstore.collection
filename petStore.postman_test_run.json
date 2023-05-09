@@ -1,0 +1,154 @@
+{
+	"id": "73dc9680-01e1-43e2-bba4-ced68eec4ae9",
+	"name": "petStore",
+	"timestamp": "2023-05-09T17:29:24.894Z",
+	"collection_id": "21284070-935d3d78-39a2-468f-a203-50478f307181",
+	"folder_id": 0,
+	"environment_id": "21284070-d64fd46a-0929-48f2-b6a3-2da161f6e370",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-05-09T17:29:23.147Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b164ecd7-e05f-49cb-95c0-441d774ba2dd",
+			"name": "Add",
+			"url": "/user",
+			"time": 124,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				124
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6fd65e50-0554-45ab-adc1-078e9443c104",
+			"name": "Verify Add Pet",
+			"url": "/user/Tyrande",
+			"time": 126,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				126
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "19594031-d731-4fce-9cc9-ffd1ad68ada8",
+			"name": "Update",
+			"url": "/user/{Tyrande}",
+			"time": 125,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				125
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4d530f9a-0a98-4553-8c8e-afc036ef5d21",
+			"name": "Verify Add Update",
+			"url": "/user/Tyrande",
+			"time": 124,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				124
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9352c237-1c5c-4e67-abcf-473e872ab277",
+			"name": "Delete",
+			"url": "/user/Tyrande",
+			"time": 126,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				126
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "24f0f63a-b60c-4825-818e-2f7d80a6bc87",
+			"name": "Verify Add Delete",
+			"url": "/user/Tyrande",
+			"time": 124,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				124
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 749,
+	"collection": {
+		"requests": [
+			{
+				"id": "b164ecd7-e05f-49cb-95c0-441d774ba2dd",
+				"method": "POST"
+			},
+			{
+				"id": "6fd65e50-0554-45ab-adc1-078e9443c104",
+				"method": "GET"
+			},
+			{
+				"id": "19594031-d731-4fce-9cc9-ffd1ad68ada8",
+				"method": "PUT"
+			},
+			{
+				"id": "4d530f9a-0a98-4553-8c8e-afc036ef5d21",
+				"method": "GET"
+			},
+			{
+				"id": "9352c237-1c5c-4e67-abcf-473e872ab277",
+				"method": "DELETE"
+			},
+			{
+				"id": "24f0f63a-b60c-4825-818e-2f7d80a6bc87",
+				"method": "GET"
+			}
+		]
+	}
+}
